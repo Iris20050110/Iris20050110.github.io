@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='Iris Li, Website'>
+    <meta name='description' content="Iris Li's Website">
+    <meta name='author' content='Iris Yushan Li'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="brailleblog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="icon" type="image/x-icon"
+    href="C:\Users\jiang\Desktop\Website\index\large_user5492897_3826049_20.ico.jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Braille Translator Blog</title>
+</head>
+
+<body>
+      <header>
+          <p class='heading'>Iris Yushan Li</p>
+
+       <div class='tab'>
+        <a href='index.htm'><button>
+        <i class='fa fa-home'></i> <span></span>Home
+        </button></a>
+
+        <h1>Braille Blog</h1>
+       </div>
+       </header>
+
+     <main>
+          <div class="blog-container">
+    <div class="blog">
+        <!-- Blog content for the first post -->
+        <h1><sup>7</sup> / <sub>23</sub><sub class='year'>, 2023</sub></h1>
+           <h2>Braille Dataset</h2>
+           <p>To make a machine learning system that can recognize Braille characters
+           and translate them into English, we first collected a dataset of Braille characters
+           divided as our training and validation datasets. The data contains 1560 pieces
+           of Braille images. The dataset is classified into 26 subsets with each represents
+           a English letter. All Braille images in the same subset represents the same English
+           letter. The data source can be found in kaggle: https://www.kaggle.com/datasets
+           /shanks0465/braille-character-dataset.</p>
+
+            <img class="OriginalImage" src="BrailleBlog/dataset.png" alt="The Mysterious House 1">
+    </div>
+
+</div>
+      </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <!-- time -->
+    <div id='time'>
+    <p>Date/Time: <span id="datetime"></span></p>
+    <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = Date();
+    </script>
+    </div>
+    <p><i class='fa fa-id-card'></i> <span></span>Iris Li</p>
+    <p><i class='fa fa-envelope'></i> <span></span>e-mail: lli@stjames.edu</p>
+    <p><i class='fa fa-phone'></i> <span></span>phone: (1)240-217-3465</p>
+    </footer>
+</body>
+
+</html>

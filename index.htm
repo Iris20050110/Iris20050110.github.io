@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='Iris Li, Website'>
+    <meta name='description' content="Iris Li's Website about Herself">
+    <meta name='author' content='Iris Yushan Li'>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+</script>
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon"
+    href="C:\Users\jiang\Desktop\Website\index\large_user5492897_3826049_20.ico.jpg" />
+    <title>Iris Li's Website</title>
+</head>
+<body>
+    <header>
+        <p class='heading'>Iris Yushan Li</p>
+        <nav>
+            <ul>
+                <li><a href="brailleblog.htm">Braille Blog</a></li>
+                <li><a href="poetry.htm">Poetry</a></li>
+                <li><a href="research.htm">Research</a></li>
+                <li><a href="interests.htm">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Your content goes here -->
+<div class='intro' id='container'>
+<a class="prev" onclick="plusSlides(-1)" style="text-align: left">&#10094;</a>
+    <div class='slides'>
+      <div class='number-order'>1/4</div>
+         <img src="member1.jpg"/>
+    </div>
+
+    <div class='slides'>
+            <div class='number-order'>2/4</div>
+                <img src="slide2.jpg"/>
+        </div>
+
+    <div class='slides'>
+            <div class='number-order'>3/4</div>
+                <img src="slide3.jpg"/>
+        </div>
+
+    <div class='slides'>
+            <div class='number-order'>4/4</div>
+                <img src="slide4.jpg" />
+        </div>
+<!-- buttons of pictures -->
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        <div class="text-container">
+            <h1>Hi, I'm Iris Li</h1>
+            <p>Welcome to my personal website! <br>I am curretly a student of Saint James
+        School. I will introduce you into my world of AI technology, arts, and Braille inventions
+        here. Explore more about me!</p>
+        </div>
+</div>
+    <!-- Add a horizontal line to separate sections -->
+    <hr class="divider">
+
+    <section class="activity">
+    <div class="image-container">
+        <img src="acitivity1.png" alt="Braille">
+    </div>
+    <div class="text-container">
+        <h2>Braille Translator</h2>
+        <p>I am now developing a Braile-to-English image translator... The general idea is
+        to train a deep learning model to recognzie Braille characters in English letters,
+        adapt an image scanning tool, and deploy it on a web. I will document my progress and
+        improvment every week here. Click the Braille Blog section to check more details about
+        my work!</p>
+    </div>
+    </section>
+
+    <section class="activity reversed">
+    <div class="text-container">
+        <h2>Poetry</h2>
+        <p>I started to write poems since 4th grade. Different from a novel or a story which
+        I attempted to shape an experience or describe a relationship, poetry is more like
+        a flash of light or a piece of a brightly colored oil painting. Click the poetry section
+        to enjoy some of my poems!</p>
+    </div>
+    <div class="image-container">
+        <img src="poetry.jpg" alt="Poetry Image">
+    </div>
+    </section>
+
+    <section class="activity">
+    <div class="image-container">
+        <img src="activity3.png" alt="Research">
+    </div>
+    <div class="text-container">
+        <h2>Research</h2>
+        <p>I am especially interested in the Interdisciplinary study of computing
+        and psychology. In my new study, I built a machine learning model that predicts
+        emotions in music using Russell's emotion quadrants. With my teammates, we
+        conducted experiments on the psychological relationship between leadership and
+        responsibility aversion. Currently, we are trying to find ways to use AI to
+        deal with mental illness. Click the Research section to learn more about what
+        I have explored! </p>
+    </div>
+    </section>
+
+     <section class="activity reversed">
+    <div class="text-container">
+        <h2>Cooking, Music, Dance, and Many Others...</h2>
+        <p>I started to write poems since 4th grade. Different from a novel or a story which
+        I attempted to shape an experience or describe a relationship, poetry is more like
+        a flash of light or a piece of a brightly colored oil painting. Click the poetry section
+        to enjoy some of my poems!</p>
+    </div>
+    <div class="image-container">
+        <img src="otheractivity.jpg" alt="Another Activity Image">
+    </div>
+    </section>
+
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+        <!-- time -->
+    <div id='time'>
+    <p>Date/Time: <span id="datetime"></span></p>
+    <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = Date();
+    </script>
+    </div>
+    <p><i class='fa fa-id-card'></i> <span></span>Iris Li</p>
+    <p><i class='fa fa-envelope'></i> <span></span>e-mail: lli@stjames.edu</p>
+    <p><i class='fa fa-phone'></i> <span></span>phone: (1)240-217-3465</p>
+    </footer>
+</body>
+</html>

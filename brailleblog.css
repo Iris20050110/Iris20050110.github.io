@@ -1,0 +1,97 @@
+  :root {
+  --darkblue: #466995;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+}
+ .heading {
+    margin-top: 0;
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 6%;
+}
+
+.tab {
+    margin: 5px;
+    background-color: var(--darkblue);
+}
+
+.tab button {
+    width: 10%;
+    height: 20px;
+    display: inline-block;
+    margin-top: 1%;
+    float: left;
+    border: none;
+    color: white;
+    background-color: var(--darkblue);
+    font-family: Poppins, serif;
+}
+
+.tab h1 {
+     color: white;
+    text-align: center;
+}
+
+header {
+    opacity: 1;
+    width: 100%;
+    z-index: 3;
+    padding: 10px 0;
+}
+
+/* Style for the blog container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     /* Add space between header and blog posts */
+}
+
+/* Style for each individual blog post */
+.blog {
+    flex-basis: calc(50% - 10px); /* Two blogs per row on larger screens with some spacing */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #e6f7ff;
+}
+
+.blog img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.blog h1 h2 {
+    color: black;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--darkblue); /* Footer background color */
+    color: #fff; /* Footer text color */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .blog {
+        flex-basis: 100%; /* One blog per row on smaller screens */
+    }
+}
