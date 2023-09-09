@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    margin-top: 0;
+    border-bottom: 5px solid #466995;
+    margin-bottom:1.5%;
+    width: 100%;
+    display: block;
+    color: #466995;
+    background-color: white;
+    opacity: 1;
+    padding: 0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-indent: 6%;
+}
+
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    width: 250px;
+    flex-basis: 30%; /* Set a fixed width for the sidebar */
+    padding: 0;
+    background-color: #466995; /* Sidebar background color */
+    position: fixed;
+    height: 100%; /* Add vertical scrolling if needed */
+    white-space: nowrap; /* Prevent line breaks for long links */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Poppins, serif;
+    padding-top: 20px; /* Remove the margin between list items */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white; /* Sidebar link color */
+    display: block; /* Display links as block elements */
+    white-space: nowrap; /* Prevent line breaks for long links */
+    padding-bottom: 20px; /* Add padding to create space and style links */
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word; /* Add dividing line between links */
+}
+
+/* Style for the main container */
+.main-container {
+    flex-basis: 70%;
+    margin-left: 25%; /* Adjust the margin to create space for the fixed-width sidebar */
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background color for the main container */
+}
+
+.main-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Style for article headings and paragraphs */
+.main-container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', serif;
+    text-align: center;
+}
+
+.main-container h2 {
+     font-size: 22px;
+     font-family: Poppins, serif;
+ }
+
+.main-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Poppins, serif;
+}
+
+#smallscreen {
+    visibility: hidden;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+     .sidebar {
+         visibility: hidden;
+     }
+
+     .container {
+    display: flex;
+    width: 100%;
+}
+
+    .main-container {
+    flex-basis: 100%;
+    margin-left: 0;
+    }
+
+    #smallscreen {
+    visibility: visible;
+    color: black;
+    font-family: Poppins, serif;
+    margin-bottom: 10px;
+    text-decoration: none;
+    }
+
+}
