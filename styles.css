@@ -196,7 +196,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #e6f7ff; 
-  color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
  font-family: Poppins, serif;
@@ -204,10 +204,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: var(--darkblue); 
- font-family: Poppins, serif;
-}
 
 .contact {
   border-radius: 5px;
