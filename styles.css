@@ -195,7 +195,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #e6f7ff; 
   color: white;
   padding: 12px 20px;
   border: none;
@@ -205,18 +205,19 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: var(--darkblue); 
  font-family: Poppins, serif;
 }
 
 .contact {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #e6f7ff; 
   padding: 20px;
 }
 
 .contact h2 {
  font-family: Poppins, serif;
+ color: var(--darkblue);
 }
 
 /* Footer styles */
